@@ -1,0 +1,16 @@
+.logobar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+    &__logo {
+        padding-inline: 6rem;
+        padding-block: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px $color-light-grey solid;
+        &:not(:last-child){
+            border-right-style: none;
+        }
+    }
+}

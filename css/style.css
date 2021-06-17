@@ -9,7 +9,7 @@ html {
 body {
   background-color: black; }
 
-.container, .mid__phi {
+.container, .mid__phi, .skillset {
   width: 100%;
   padding-right: 7.2rem;
   padding-left: 7.2rem;
@@ -162,3 +162,26 @@ p {
     background-size: cover;
     background-position: center;
     height: 60rem; }
+
+.skillset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  padding-block: 4.8rem; }
+  .skillset__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem; }
+
+.logobar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  .logobar__logo {
+    padding-inline: 6rem;
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #8491A0 solid; }
+    .logobar__logo:not(:last-child) {
+      border-right-style: none; }
