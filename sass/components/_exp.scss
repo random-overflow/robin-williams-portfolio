@@ -1,0 +1,27 @@
+.exp {
+
+    &__title {
+        grid-area: Title;
+    }
+
+    &__companies {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 6rem;
+    }
+
+    h1 {
+        font-weight: lighter !important;
+    }
+
+    &__company-1 {
+
+    }
+
+    &__company-2 {
+    }
+
+    &__company-3 {
+    }
+
+}

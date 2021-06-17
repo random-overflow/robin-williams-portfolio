@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: black; }
+
+.container {
+  width: 100%;
+  padding-right: 7.2rem;
+  padding-left: 7.2rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.text--light {
+  color: white !important; }
+
+.text--dark-gray {
+  color: #C7E0F4 !important; }
+
+.text--light-gray {
+  color: #8491A0 !important; }
+
+.text--purple {
+  color: #5221E6 !important; }
+
+.text--green {
+  color: #3CC74E !important; }
+
+.text--pink {
+  color: #E95D90 !important; }
+
+.text--primary {
+  color: #5221E6 !important; }
+
+h1 {
+  font-size: 7.6rem;
+  color: white;
+  font-weight: bold; }
+
+h2 {
+  font-size: 5.5rem;
+  color: white;
+  font-weight: bold; }
+
+h3 {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: bold; }
+
+h4 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold; }
+
+h5 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold; }
+
+.b1 {
+  font-size: 1.8rem;
+  color: white; }
+
+.b2 {
+  font-size: 1.6rem;
+  color: white; }
+
+.nav {
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .nav__brand {
+    padding: 2rem;
+    align-self: center; }
+  .nav__items {
+    z-index: 1000;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1; }
+    .nav__items > * {
+      height: 100%;
+      padding-inline: 2rem;
+      display: flex;
+      align-items: center; }
+  .nav__item--contact {
+    background-color: #5221E6; }
+  .nav__item:not(:last-child) {
+    margin-right: 2rem; }
+
+.hero {
+  margin-top: -6rem;
+  min-height: 100vh;
+  display: flex; }
+  .hero__left {
+    width: 38vw;
+    z-index: 1;
+    display: flex;
+    align-items: center; }
+    .hero__left > img {
+      width: 100%;
+      height: auto; }
+  .hero__right {
+    width: 62vw;
+    background-color: #181823;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .hero__desc {
+    margin-left: 14rem;
+    margin-right: 4rem;
+    z-index: 1; }
+
+.exp__title {
+  grid-area: Title; }
+
+.exp__companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem; }
+
+.exp h1 {
+  font-weight: lighter !important; }

@@ -1,0 +1,72 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+@mixin colors() {
+    &--light {
+        color:$color-white !important;
+    }
+    &--dark-gray {
+        color: $color-dark-grey !important;
+    }
+    &--light-gray {
+        color: $color-light-grey !important;
+    }
+    &--purple {
+        color: $color-purple !important;
+    }
+    &--green {
+        color: $color-green !important;
+    }
+    &--pink {
+        color: $color-pink !important;
+    }
+    &--primary {
+        color: $color-primary !important;
+    }
+}
+
+@mixin heading($font-size) {
+    font-size: $font-size;
+    color:white;
+    font-weight: bold;
+}
+
+@mixin body($font-size) {
+    font-size: $font-size;
+    color:white;
+}
+
+.text {
+    @include colors();
+}
+
+h1 {
+    @include heading(7.6rem);
+}
+
+h2 {
+    @include heading(5.5rem);
+}
+
+h3 {
+    @include heading(2.4rem);
+}
+
+h4 {
+    @include heading(1.8rem);
+}
+
+h5 {
+    @include heading(1.5rem);
+}
+
+.b1 {
+    @include body(1.8rem)
+}
+
+.b2 {
+    @include body(1.6rem)
+}
