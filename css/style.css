@@ -107,9 +107,10 @@ h5 {
 .hero {
   margin-top: -6rem;
   min-height: 100vh;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70rem, max-content));
+  justify-content: center; }
   .hero__left {
-    width: 38vw;
     z-index: 1;
     display: flex;
     align-items: center; }
@@ -117,12 +118,12 @@ h5 {
       width: 100%;
       height: auto; }
   .hero__right {
-    width: 62vw;
     background-color: #181823;
     display: flex;
     justify-content: center;
     align-items: center; }
   .hero__desc {
+    padding-block: 4.8rem;
     margin-left: 14rem;
     margin-right: 4rem;
     z-index: 1; }
