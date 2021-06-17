@@ -85,6 +85,7 @@ h5 {
   flex-direction: row;
   justify-content: flex-end; }
   .nav__brand {
+    z-index: 1000;
     padding: 2rem;
     align-self: center; }
   .nav__items {
