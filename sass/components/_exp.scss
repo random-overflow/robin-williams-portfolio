@@ -1,8 +1,5 @@
 .exp {
-
-    &__title {
-        grid-area: Title;
-    }
+    @include padding-block;
 
     &__companies {
         display: grid;

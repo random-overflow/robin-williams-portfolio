@@ -1,0 +1,23 @@
+.mid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+
+    @include padding-block;
+
+    &__phi {
+        @extend .container;
+        @include padding-block;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    &__image {
+        background: url("../../img/Rectangle\ 38.png");
+        background-size: cover;
+        background-position: center;
+        height: 60rem;
+    }
+}

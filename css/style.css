@@ -9,7 +9,7 @@ html {
 body {
   background-color: black; }
 
-.container {
+.container, .mid__phi {
   width: 100%;
   padding-right: 7.2rem;
   padding-left: 7.2rem;
@@ -42,17 +42,23 @@ html {
 .text--primary {
   color: #5221E6 !important; }
 
+.text--level-1 {
+  color: #181823 !important; }
+
 h1 {
+  line-height: 9.1rem;
   font-size: 7.6rem;
   color: white;
   font-weight: bold; }
 
 h2 {
+  line-height: 6.6rem;
   font-size: 5.5rem;
   color: white;
   font-weight: bold; }
 
 h3 {
+  line-height: 2.9rem;
   font-size: 2.4rem;
   color: white;
   font-weight: bold; }
@@ -74,6 +80,9 @@ h5 {
 .b2 {
   font-size: 1.6rem;
   color: white; }
+
+p {
+  font-size: 1.8rem; }
 
 .nav {
   font-size: 2rem;
@@ -109,7 +118,7 @@ h5 {
   margin-top: -6rem;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70rem, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
   justify-content: center; }
   .hero__left {
     z-index: 1;
@@ -129,13 +138,27 @@ h5 {
     margin-right: 4rem;
     z-index: 1; }
 
-.exp__title {
-  grid-area: Title; }
+.exp {
+  padding-block: 4.8rem; }
+  .exp__companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem; }
+  .exp h1 {
+    font-weight: lighter !important; }
 
-.exp__companies {
+.mid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem; }
-
-.exp h1 {
-  font-weight: lighter !important; }
+  grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+  padding-block: 4.8rem; }
+  .mid__phi {
+    padding-block: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white; }
+  .mid__image {
+    background: url("../../img/Rectangle 38.png");
+    background-size: cover;
+    background-position: center;
+    height: 60rem; }

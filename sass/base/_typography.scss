@@ -26,6 +26,9 @@ html {
     &--primary {
         color: $color-primary !important;
     }
+    &--level-1 {
+        color: $color-level-1 !important;
+    }
 }
 
 @mixin heading($font-size) {
@@ -44,14 +47,17 @@ html {
 }
 
 h1 {
+    line-height: 9.1rem;
     @include heading(7.6rem);
 }
 
 h2 {
+    line-height: 6.6rem;
     @include heading(5.5rem);
 }
 
 h3 {
+    line-height: 2.9rem;
     @include heading(2.4rem);
 }
 
@@ -69,4 +75,8 @@ h5 {
 
 .b2 {
     @include body(1.6rem)
+}
+
+p {
+    font-size: 1.8rem;
 }
