@@ -1,0 +1,43 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: center;
+
+    @extend .container;
+    @include padding-block;
+
+    &__head {
+        padding-block:6rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__preview {
+        @include padding-block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__desc {
+        @extend .container;
+        @include padding-block;
+        background-color: $color-level-1;
+    }
+
+    &__left, &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__button {
+        text-decoration: none;
+        padding: 2rem;
+        border: 2px solid $color-primary;
+        font-weight: bold;
+    }
+}
