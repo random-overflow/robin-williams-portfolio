@@ -1,6 +1,5 @@
 .logobar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    @include grid-autofit(25rem, 0);
 
     &__logo {
         padding-inline: 6rem;

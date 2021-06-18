@@ -1,8 +1,8 @@
 .hero {
     margin-top: -$nav-height;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+    @include grid-autofit(70rem, 0);
+
     justify-content: center;
 
     &__left {

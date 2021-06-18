@@ -1,3 +1,9 @@
 @mixin padding-block {
     padding-block: 4.8rem;
 }
+
+@mixin grid-autofit($min, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+    grid-gap: $gap;
+}

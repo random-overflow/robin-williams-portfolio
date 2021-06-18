@@ -1,11 +1,9 @@
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 6rem;
-    align-items: center;
-
+    @include grid-autofit(25rem, 6rem);
     @extend .container;
     @include padding-block;
+
+    align-items: center;
 
     &__head {
         padding-block:6rem;

@@ -119,6 +119,7 @@ p {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+  grid-gap: 0;
   justify-content: center; }
   .hero__left {
     z-index: 1;
@@ -141,16 +142,17 @@ p {
 .exp {
   padding-block: 4.8rem; }
   .exp__companies {
-    padding-top: 6rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 6rem; }
+    grid-gap: 6rem;
+    padding-top: 6rem; }
   .exp h1 {
     font-weight: lighter !important; }
 
 .mid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+  grid-gap: 0;
   padding-block: 4.8rem; }
   .mid__phi {
     padding-block: 4.8rem;
@@ -179,7 +181,8 @@ p {
 
 .logobar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 0; }
   .logobar__logo {
     padding-inline: 6rem;
     padding-block: 3rem;
@@ -194,8 +197,8 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
-  align-items: center;
-  padding-block: 4.8rem; }
+  padding-block: 4.8rem;
+  align-items: center; }
   .projects__head {
     padding-block: 6rem; }
   .projects img {

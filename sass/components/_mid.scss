@@ -1,7 +1,5 @@
 .mid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
-
+    @include grid-autofit(70rem, 0);
     @include padding-block;
 
     &__phi {
