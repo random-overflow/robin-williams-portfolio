@@ -1,0 +1,27 @@
+.testimonials {
+    @include padding-block;
+    @include grid-autofit(50rem, 6rem);
+    @extend .container;
+
+    &__preview {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $color-light-grey;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    &__comment {
+        @extend .container;
+        @include padding-block;
+    }
+
+    &__quote {
+        padding-bottom: 6rem;
+    }
+
+}

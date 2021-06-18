@@ -2,7 +2,7 @@
     @include grid-autofit(70rem, 0);
     @include padding-block;
 
-    &__phi {
+    &__phi, &__insta {
         @extend .container;
         @include padding-block;
 
@@ -17,6 +17,13 @@
         background-size: cover;
         background-position: center;
         height: 60rem;
+
+        &--insta {
+            background: url("../../img/Rectangle\ 38\ insta.png");
+            background-size: cover;
+            background-position: center;
+            height: 60rem
+        }
     }
 
     &__more {

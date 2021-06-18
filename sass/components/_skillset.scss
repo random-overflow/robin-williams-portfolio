@@ -5,9 +5,6 @@
     @include padding-block;
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 6rem;
-
+        @include grid-autofit(70rem, 6rem);
     }
 }

@@ -1,0 +1,18 @@
+.dribbble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__desc {
+        @extend .container;
+        @include padding-block;
+        align-self: flex-start;
+    }
+
+    &__screenshot {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+}
