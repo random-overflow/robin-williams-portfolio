@@ -1,0 +1,21 @@
+.contact {
+    @include grid-autofit(70rem, 6rem);
+    @include padding-block;
+    @extend .container;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        label {
+            margin-bottom: 0.5rem;
+        }
+        input, textarea {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .button {
+        width: 100%;
+    }
+}

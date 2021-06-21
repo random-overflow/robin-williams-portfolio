@@ -12,16 +12,22 @@ html {
 body {
   background-color: black; }
 
-.container, .mid__phi, .mid__insta, .skillset, .projects, .projects__desc, .dribbble__desc, .testimonials, .testimonials__comment, .photography {
+.container, .mid__phi, .mid__insta, .skillset, .projects, .projects__desc, .dribbble__desc, .testimonials, .testimonials__comment, .photography, .contact {
   width: 100%;
   padding-right: 7.2rem;
   padding-left: 7.2rem;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (max-width: 800px) {
-    .container, .mid__phi, .mid__insta, .skillset, .projects, .projects__desc, .dribbble__desc, .testimonials, .testimonials__comment, .photography {
+    .container, .mid__phi, .mid__insta, .skillset, .projects, .projects__desc, .dribbble__desc, .testimonials, .testimonials__comment, .photography, .contact {
       padding-right: 1.5rem;
       padding-left: 1.5rem; } }
+
+input, textarea {
+  color: #8491A0;
+  background: #181823;
+  border: none;
+  padding: 1.5rem; }
 
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -88,8 +94,9 @@ h5 {
   font-size: 1.6rem;
   color: white; }
 
-p {
-  font-size: 1.8rem; }
+p, label {
+  font-size: 1.8rem;
+  color: #C7E0F4; }
 
 .button, .button--active {
   text-decoration: none;
@@ -323,3 +330,21 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr)); } }
   .photography img {
     max-width: 30rem; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+  gap: 6rem;
+  padding-block: 4.8rem; }
+  @media only screen and (max-width: 70rem) {
+    .contact {
+      grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr)); } }
+  .contact form {
+    display: flex;
+    flex-direction: column; }
+    .contact form label {
+      margin-bottom: 0.5rem; }
+    .contact form input, .contact form textarea {
+      margin-bottom: 2rem; }
+  .contact .button, .contact .button--active {
+    width: 100%; }

@@ -28,3 +28,10 @@ body {
         padding-left: 1.5rem;
     }
 }
+
+input, textarea {
+    color: $color-light-grey;
+    background: $color-level-1;
+    border: none;
+    padding: 1.5rem;
+}
