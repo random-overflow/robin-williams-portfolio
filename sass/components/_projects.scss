@@ -1,5 +1,5 @@
 .projects {
-    @include grid-autofit(25rem, 6rem);
+    @include grid-autofit(50rem, 6rem);
     @extend .container;
     @include padding-block;
 
@@ -30,12 +30,5 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    &__button {
-        text-decoration: none;
-        padding: 2rem;
-        border: 2px solid $color-primary;
-        font-weight: bold;
     }
 }

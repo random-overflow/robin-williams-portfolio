@@ -5,5 +5,9 @@
 @mixin grid-autofit($min, $gap) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
-    grid-gap: $gap;
+    gap: $gap;
+
+    @media only screen and (max-width: $min) {
+        grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    }
 }

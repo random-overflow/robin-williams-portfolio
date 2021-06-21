@@ -1,10 +1,11 @@
 .skillset {
-    @include grid-autofit(25rem, 6rem);
+    @include grid-autofit(50rem, 6rem);
 
     @extend .container;
     @include padding-block;
 
     &__list {
-        @include grid-autofit(70rem, 6rem);
+        @include grid-autofit(50rem, 6rem);
     }
+    
 }
