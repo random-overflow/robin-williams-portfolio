@@ -26,8 +26,8 @@
 
     &__desc {
         @include padding-block;
-        margin-left: 14rem;
-        margin-right: 4rem;
+        @extend .container;
+
         z-index: 1;
     }
 }
