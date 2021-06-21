@@ -149,11 +149,14 @@ a {
       .nav__items {
         display: none; } }
   .nav__hamburger {
-    z-index: 1000;
-    align-self: center;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; }
+    display: none; }
+    @media only screen and (max-width: 600px) {
+      .nav__hamburger {
+        z-index: 1000;
+        align-self: center;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; } }
   .nav__item--contact {
     background-color: #5221E6; }
   .nav__item:not(:last-child) {
@@ -224,7 +227,7 @@ a {
       height: 60rem; }
   .mid__more {
     color: black;
-    text-decoration: 4px underline #5221E6; }
+    text-decoration: 4px underline #8491A0; }
 
 .skillset {
   display: grid;

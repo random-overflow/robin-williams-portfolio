@@ -41,11 +41,14 @@
     }
 
     &__hamburger {
-        z-index: 1000;
-        align-self: center;
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
+        display: none;
+        @media only screen and (max-width: 600px) {
+            z-index: 1000;
+            align-self: center;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     &__item {
