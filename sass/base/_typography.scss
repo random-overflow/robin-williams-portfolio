@@ -77,7 +77,12 @@ h5 {
     @include body(1.6rem)
 }
 
-p, label {
+p, label, a {
     font-size: 1.8rem;
-    color: $color-dark-grey;
+    color: $color-light-grey;
+}
+
+a {
+    color: $color-white;
+    text-decoration: none;
 }
